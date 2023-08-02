@@ -1,0 +1,277 @@
+.section__kval{
+    padding: 50px 0px;
+
+    @media screen and (max-width: 1200px ) {
+        padding: 0px 0px 50px 0px;
+    }
+
+    & .kval{
+        padding: 60px;
+        background-image: url('../img/kon__img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        flex: 0 0 100%;
+        background-position: center;
+        border-radius: 12px;
+        position: relative;
+
+        @media screen and (max-width: 992px ) {
+           padding: 30px;
+        
+        }
+
+        @media screen and (max-width: 480px){
+            height: 480px;
+       }
+
+        &__title{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #282828;
+
+             
+            @media screen and (max-width: 760px){
+                font-size: 32px;
+                line-height: 130%;
+           }
+
+           @media screen and (max-width: 480px){
+            font-size: 26px;
+            line-height: 130%;
+       }
+        }
+
+        &__item{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 30px;
+
+          @media screen and (max-width: 992px ) {
+            flex-direction: column;
+            align-items: flex-start;
+         }
+
+         @media screen and (max-width: 480px){
+            gap: 10px;
+       }
+
+          &_title{ 
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 50px;
+            
+            color: #FFC350;
+
+            @media screen and (max-width: 992px ) {
+                font-size: 24px;
+                line-height: 140%;
+                max-width: 400px;
+             }
+          }
+
+          &_link{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 50px;
+            text-align: center;
+            color: #282828;
+            padding: 8px 78px;
+            background: #FFD600;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all ease .3s;
+
+            @media screen and (max-width: 992px ) {
+                padding: 0px 70px;
+             }
+
+            &:hover{
+            background: #bb9e0c;
+
+            }
+          }
+
+          &_subtitle{
+            position: absolute;
+            bottom: 60px;
+            right: 60px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 50px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            @media screen and (max-width: 992px ) {
+                font-size: 24px;
+                line-height: 140%;
+                max-width: 400px;
+                text-align: right;
+                bottom: 30px;
+                right: 30px;
+             }
+
+          }
+
+        }
+
+        
+
+    }
+
+}
+
+.section__kon{
+    padding: 80px 0px;
+
+    background-image: url('../img/7\ экран-Консультация.jpg');
+    background-size: cover;
+    height: 820px;
+
+    @media screen and (max-width: 994px ){
+        padding: 60px 0px;
+    }
+
+    @media screen and (max-width: 550px ){
+        height: 500px;
+        background-position: -200px;
+    }
+
+    & .kon__title{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 50px;
+        text-align: center;
+        color: #FFFFFF;  
+        margin: 0;  
+        
+        @media screen and (max-width: 994px ){
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 770px ){
+            font-size: 27px;
+        }
+    }
+
+    & .kon__item{
+        margin-top: 120px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media screen and (max-width: 770px ){
+            margin-top: 50px;
+        }
+
+        @media screen and (max-width: 550px ){
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &_select{
+            background: rgba(255, 255, 255, 0.87);
+            border-radius: 30px;
+            max-width: 471px;
+            width: 100%;
+            padding: 15px 25px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #282828;
+            border: none;
+            outline: none;
+            border-right: 25px solid transparent;
+
+            @media screen and (max-width: 550px ){
+                max-width: 100%;
+                width: 100%;
+            }
+
+
+        }
+
+        &_form{
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+            margin-top: 25px;
+
+            @media screen and (max-width: 550px ){
+                max-width: 100%;
+                width: 100%;
+            }
+
+
+            &_mail{
+                background: rgba(255, 255, 255, 0.87);
+                border-radius: 30px;
+                width: 421px;
+                padding: 15px 25px;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #282828;
+                border: none;
+                outline: none;
+
+                @media screen and (max-width: 550px ){
+                    max-width: 85%;
+                    width: 100%;
+                }
+    
+                
+            }
+
+            &_button{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 50px;
+                text-align: center;
+                color: #282828;
+                background: #FFD600;
+                border-radius: 100px;
+                padding: 5px 0px;
+                max-width: 471px;
+                width: 100%;
+                border: none;
+                outline: none;
+                transition: all ease .3s;
+
+                @media screen and (max-width: 550px ){
+                    max-width: 100%;
+                    width: 100%;
+                }
+    
+
+                &:hover{
+                background: #957e0c;
+
+                }
+            }
+        }
+
+    }
+
+}

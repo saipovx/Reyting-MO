@@ -1,0 +1,243 @@
+.VAC {
+    
+    width: 100%;
+    padding: 30px 0px;
+    z-index: 999 !important;
+
+
+    @media screen and (max-width: 700px){
+        width: 95%;
+    }
+
+
+    & .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+
+
+    &__out {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width:875px ;
+        margin: 0 auto;
+        position: relative;
+     
+        text-decoration: none !important;
+
+        & .svg{
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+
+
+        &_in {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            position: relative;
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            padding: 8px 0px 8px 8px;
+            min-height: 250px;
+            text-decoration: none !important;
+
+            @media screen and (max-width: 750px) {
+                height: fit-content;
+                padding: 120px 0px 50px 20px;
+            }
+
+            &_title {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 50px;
+                color: #1262B3;
+                max-width: 700px;
+                // ce1616
+                margin: 0;
+
+                @media screen and (max-width: 750px){
+                    font-size: 22px;
+                }
+            }
+
+            &_two {
+                display: flex;
+                gap: 40px;
+                margin-top: 10px;
+
+                @media screen and (max-width: 750px) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+                &_sal {
+                    display: flex;
+                    flex-direction: column;
+
+                    &_text {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 36px;
+                        letter-spacing: 0.02em;
+                        color: #282828;
+                        margin: 0;
+                         
+                    }
+
+                    &_exp {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 10px;
+                        line-height: 36px;
+                        letter-spacing: 0.02em;
+                        margin: 0;
+                        color: rgba(40, 40, 40, 0.7);
+                    }
+                }
+            }
+
+            &_logo {
+                position: absolute;
+                top: 20px;
+                right: 18px;
+                width: 100px;
+                height: 100px !important;
+                border-radius: 50%;
+
+                @media screen and (max-width: 750px) {
+                        
+                    height: auto;
+                   
+                    left: 15px;
+                    top: 15px;
+                    margin-bottom: 20px;
+
+                    }
+
+            }
+        }
+
+        &_botline {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin: 22px;
+
+            &_eyeDiv {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                &_245{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                        margin: 0;
+                        color: rgba(0, 0, 0, 0.6);
+                    
+                }
+
+                &_eye {
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 5px;
+                }
+            }
+
+            &_change {
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                gap: 20px;
+
+
+
+
+                &_pics {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    gap: 10px;
+
+                    @media screen and (max-width: 500px) {
+                        width: 100%;
+                        text-align: center;
+                     }
+
+                    &_blue {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #fff;
+
+                        cursor: pointer;
+                        margin: 0;
+                        transition: .4s all ease;
+                        text-decoration: none;
+
+                        border: none;
+                        padding: 8px 10px;
+                        border-radius: 10px;
+                        background-color: #1262B3;
+
+                        @media screen and (max-width: 500px) {
+                           width: 100%;
+                           text-align: center;
+                        }
+
+                    }
+
+                    &_delete{
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #fff;
+                        cursor: pointer;
+                        margin: 0;
+                        transition: .4s all ease;
+
+                        border: none;
+                        padding: 8px 20px;
+                        border-radius: 10px;
+                        background-color: #970000;
+
+                        @media screen and (max-width: 500px) {
+                            width: 100%;
+                            text-align: center;
+                         }
+                    }
+
+                   
+
+                    &_other {
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+}

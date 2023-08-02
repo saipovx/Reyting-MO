@@ -1,0 +1,180 @@
+.section__choise{
+    padding: 100px 0px;
+
+    @media screen and (max-width: 1200px){
+         padding: 70px 0px;
+    }
+
+    @media screen and (max-width: 760px){
+        padding: 30px 0px;
+   }
+
+
+   & .choise{
+
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+
+    @media screen and (max-width: 992px ) {
+       flex-direction: column;
+    }
+
+    @media screen and (max-width: 480px ) {
+        gap: 50px;
+     }
+
+    &__item{
+        flex: 0 1 800px;
+        max-width: 100%;
+        width: 100%;
+
+        background: #FFFFFF;
+        /* Тень */
+        
+        box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.05);
+        border-radius: 12px !important;
+
+        @media screen and (max-width: 992px ) {
+            flex: 0 1 100%;
+         }
+
+        
+
+
+        &_info{
+            background-image: url('../img/choise__1.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 288px;
+            border-radius: 12px !important;
+
+            @media screen and (max-width: 1200px ) {
+                height: 250px;
+            }
+
+            @media screen and (max-width: 992px ) {
+                width: 100%;
+                background-size: 100%;
+            
+             }
+
+             @media screen and (max-width: 480px ) {
+                height: 130px;
+            }
+             
+        }
+
+        &_info2{
+            background-image: url('../img/choise__2.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 288px;
+            border-radius: 12px !important;
+
+            @media screen and (max-width: 1200px ) {
+                height: 200px;
+            }
+
+            @media screen and (max-width: 992px ) {
+                width: 100%;
+                background-size: 100%;
+             }
+
+             @media screen and (max-width: 480px ) {
+                height: 130px;
+            }
+             
+        }
+
+        &_content{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+            padding: 60px 0px;
+            
+            max-width: 500px;
+
+            @media screen and (max-width: 1200px ) {
+                padding: 40px 20px;
+            }
+
+            & ul{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding: 0;
+                text-align: left;
+                gap: 20px;
+
+                @media screen and (max-width: 480px ) {
+                    flex-direction: column-reverse;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 100%;
+                    gap: 10px;
+                    margin: 0 0 ;
+                }
+
+                & li{
+                    list-style-type: none !important;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 50px;
+
+                    @media screen and (max-width: 480px ) {
+                        font-size: 20px;
+                        line-height: 130%;
+                    }
+                }
+
+                & div{
+                    width: 30px;
+                    height: 2px;
+                    background-color: #1262B3;
+
+                    @media screen and (max-width: 480px ) {
+                        width: 100%;
+                        margin: 15px 0px;
+                    }
+                    
+                }
+
+            }
+
+            &_button{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;              
+                text-align: center;
+                color: #000000;
+                padding: 8px 53px;
+                background: #FFD600;
+                border-radius: 30px;
+                text-decoration: none;
+                margin: 0  auto;
+                margin-top: 55px;
+                transition: all ease .3s;
+
+                &:hover{
+                background: #d1ae00;
+                }
+
+                @media screen and (max-width: 480px ) {
+                    margin-top: 20px;
+                }
+
+            }
+
+        }
+
+    }
+    
+   }
+
+}

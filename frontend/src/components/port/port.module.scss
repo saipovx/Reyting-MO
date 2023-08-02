@@ -1,0 +1,72 @@
+.section__port{
+    background: #fff;
+    padding: 100px 0px;
+
+    @media screen and (max-width: 760px){
+        padding: 50px 0px;
+    }
+
+    & .port{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+
+        margin-top: 100px;
+        
+
+        @media screen and (max-width: 1550px){
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @media screen and (max-width: 1000px){
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 770px){
+           gap: 20px;
+        }
+
+        &__title{
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #232A32;
+            margin: 0;
+
+            @media screen and (max-width: 760px){
+                font-size: 32px;
+                line-height: 130%;
+           }
+
+           @media screen and (max-width: 480px){
+            font-size: 26px;
+            line-height: 130%;
+       }
+        }
+
+        & img{
+            max-width: 300px;
+
+            @media screen and (max-width: 1200px){
+                max-width: 200px;
+            }
+
+            @media screen and (max-width: 1000px){
+                max-width: 150px;
+            }
+
+            @media screen and (max-width: 770px){
+                max-width: 100px;
+            }
+        }
+
+    }
+
+}

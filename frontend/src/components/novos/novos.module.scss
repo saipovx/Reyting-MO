@@ -1,0 +1,104 @@
+.section__novos{
+    padding: 100px 0px;
+    background: #F3F3F3;
+
+    @media screen and (max-width: 760px){
+       padding: 50px 0px;
+   }
+
+    & .novod{
+
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+
+        @media screen and (max-width: 992px ) {
+            flex-wrap: wrap;
+         }
+
+
+         @media screen and (max-width: 770px ) {
+            width: 100%;
+         }
+
+        &__title{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #232A32;
+            margin: 0;
+
+            @media screen and (max-width: 760px){
+                font-size: 32px;
+                line-height: 130%;
+           }
+
+           @media screen and (max-width: 480px){
+            font-size: 26px;
+            line-height: 130%;
+       }
+        }
+
+        &__item{
+
+            flex: 0 1 24%;
+            max-width: 100%;
+            width: 100%;
+
+            background: #F8F7F7;
+            transition: .3s all ease;
+
+            display: flex;
+            flex-direction: column;
+
+
+            &:hover{
+                background: #FFFFFF;
+            }
+
+            @media screen and (max-width: 992px ) {
+                flex: 0 1 47%;
+             }
+
+             @media screen and (max-width: 770px ) {
+                flex: 0 0 100%;
+                width: 100%;
+             }
+
+            & img{
+                width: 100%;
+                height: auto;
+            }
+
+            &_title{
+                font-family: 'Helvetica';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15.5918px;
+                line-height: 19px;
+                color: #2B3D4F;
+                padding: 23px;
+            }
+
+            &_link{
+                font-family: 'Helvetica';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13.8594px;
+                line-height: 19px;
+                color: #FF3D00;
+                cursor: pointer;
+                text-decoration: none;
+                            
+                padding: 0px 23px 34px 23px;
+            }
+
+        }
+
+    }
+}

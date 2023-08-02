@@ -1,0 +1,231 @@
+#green{
+    background-color: rgba(57, 151, 25, 0.1);
+}
+#greenT{
+    color: #165500;
+}
+#red{
+    background-color: rgba(171, 16, 16, 0.1);
+}
+#redT{
+    color: #700000;
+}
+#gray{
+    background-color: rgba(84, 84, 84, 0.1);
+}
+
+
+.sectionRecomendation {
+    padding: 150px 0px;
+
+    @media screen and (max-width: 800px) {
+        padding: 100px 0px;
+    }
+
+    & .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 20px;
+    }
+
+
+    .recomendation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &__box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+
+            @media screen and  (max-width: 650px){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &_avatarAnd {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                @media screen and  (max-width: 650px){
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    margin-left: 0px;
+                }
+
+                &_avatar {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 50%;
+
+                    @media screen and (max-width: 480px) {
+                        max-width: 100px;
+                        width: 100%;
+                        height: 100px;
+                        border-radius: 50%;
+                        margin-bottom: 10px;
+                     }
+                     
+                }
+
+                &_pshki {
+                    margin-left: 5px;
+
+                    &_bold {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 120%;
+                        color: #282828;
+                        margin: 0;
+
+                        @media screen and  (max-width: 650px){
+                            font-size: 26px;
+                        }
+                    }
+
+                    &_text {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 120%;
+                        color: #282828;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        &__rating {
+            display: flex;
+
+            @media screen and  (max-width: 650px){
+            }
+
+            &_textR {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 50px;
+                color: #282828;
+            }
+
+            &_st {
+                margin-left: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &_textF {
+                    margin-left: 5px;
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 36px;
+                    text-align: center;
+                    margin: 0;
+                    color: #282828;
+                }
+            }
+        }
+
+        &__recs{
+            width: 100%;
+
+
+            &_title{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 45px;
+                line-height: 50px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #282828;
+                margin-top: 50px;
+                // margin: 0;
+                margin-bottom: 45px;
+
+                @media screen and  (max-width: 650px){
+                    font-size: 32px;
+                }
+            }
+
+            &_review{
+              
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                position: relative;
+                border-radius: 12px;
+                margin-bottom: 50px;
+                padding: 15px 20px;
+
+                @media screen and  (max-width: 650px){
+                    padding: 10px 15px;
+                }
+
+                &_worker{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 36px;
+                    padding: 14px 0px;
+                    margin: 0;
+
+                    @media screen and  (max-width: 650px){
+                        font-size: 18px;
+                    }
+                    
+                }
+
+                &_textReview{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 36px;
+                    color: #282828;
+                    margin: 0;
+
+                    @media only screen and (max-width: 650px) {
+                        font-size: 18px;
+                        br {
+                            display: none;
+                        }
+                    }
+                }
+
+                &_stars{
+                    position: absolute;
+                    bottom: 19px;
+                    right: 25px;
+
+                    @media screen and  (max-width: 650px){
+                        position: relative;
+                        bottom: auto;
+                        right: auto;
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}

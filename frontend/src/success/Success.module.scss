@@ -1,0 +1,108 @@
+.section__pay {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../components/img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(1.1) brightness(1.1) grayscale(0);
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+    & .payF{    
+        background: linear-gradient(107.62deg, rgba(255, 195, 80, 0.85) -53.02%, rgba(255, 195, 80, 0.85) 134.49%);
+        border-radius: 60px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 500px;
+        min-height: 400px;
+        width: 100%;
+        margin: 0 auto;
+
+       padding: 60px 120px;
+
+       @media screen and (max-width: 992px) {
+        padding: 60px;
+        margin-top: 50px;
+        max-width: none;
+        min-height: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        }
+        @media screen and (max-width: 700px) {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+       img{
+        width: 120px;
+
+        @media screen and (max-width: 700px) {
+            width: 70px;
+            }
+       }
+
+       &__link{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 10px 40px;
+        border-radius: 12px;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.415);
+        transition: all ease 1s;
+
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.692);
+        }
+
+
+        @media screen and (max-width: 700px) {
+            padding: 10px 20px;
+            font-size: 15px;
+        }
+
+       }
+        
+
+
+        
+
+        &__title{
+        
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            
+        @media screen and (max-width: 700px) {
+
+            font-size: 20px;
+            line-height: 24px;
+
+        }
+
+
+        }
+
+    }
+
+}
